@@ -1,0 +1,60 @@
+2020-07-18 21:16:54,656 - INFO - ########## Football Management Tool Server Started ##########
+2020-07-18 21:16:54,662 - INFO - MongoDbService/create_collection - the collection "leagues" already exist
+2020-07-18 21:16:54,663 - INFO - MongoDbService/create_collection - the collection "teams" already exist
+2020-07-18 21:16:54,664 - INFO - MongoDbService/create_collection - the collection "matches" already exist
+2020-07-18 21:16:54,664 - INFO - Goin' Fast @ http://0.0.0.0:8000
+2020-07-18 21:16:54,665 - INFO - Starting worker [12358]
+2020-07-18 21:17:15,291 - INFO - Stopping worker [12358]
+2020-07-18 21:17:15,292 - INFO - Server Stopped
+2020-07-18 21:17:15,292 - INFO - ########## Football Management Tool Server Finished ##########
+2020-07-18 21:18:51,527 ---- INFO - ########## Football Management Tool Server Started ##########
+2020-07-18 21:18:51,534 ---- INFO - MongoDbService/create_collection - the collection "leagues" already exist
+2020-07-18 21:18:51,535 ---- INFO - MongoDbService/create_collection - the collection "teams" already exist
+2020-07-18 21:18:51,537 ---- INFO - MongoDbService/create_collection - the collection "matches" already exist
+2020-07-18 21:18:51,537 ---- INFO - Goin' Fast @ http://0.0.0.0:8000
+2020-07-18 21:18:51,539 ---- INFO - Starting worker [12416]
+2020-07-18 21:22:35,937 ---- INFO - Stopping worker [12416]
+2020-07-18 21:22:35,939 ---- INFO - Server Stopped
+2020-07-18 21:22:35,939 ---- INFO - ########## Football Management Tool Server Finished ##########
+2020-07-18 21:23:00,153 - INFO - ########## Football Management Tool Server Started ##########
+2020-07-18 21:23:00,158 - INFO - MongoDbService/create_collection - the collection "leagues" already exist
+2020-07-18 21:23:00,159 - INFO - MongoDbService/create_collection - the collection "teams" already exist
+2020-07-18 21:23:00,160 - INFO - MongoDbService/create_collection - the collection "matches" already exist
+2020-07-18 21:23:00,160 - INFO - Goin' Fast @ http://0.0.0.0:8000
+2020-07-18 21:23:00,162 - INFO - Starting worker [12499]
+2020-07-18 21:24:00,975 - INFO - Stopping worker [12499]
+2020-07-18 21:24:00,976 - INFO - Server Stopped
+2020-07-18 21:24:00,976 - INFO - ########## Football Management Tool Server Finished ##########
+2020-07-18 21:24:01,488 - INFO - ########## Football Management Tool Server Started ##########
+2020-07-18 21:24:01,493 - INFO - MongoDbService/create_collection - the collection "leagues" already exist
+2020-07-18 21:24:01,494 - INFO - MongoDbService/create_collection - the collection "teams" already exist
+2020-07-18 21:24:01,495 - INFO - MongoDbService/create_collection - the collection "matches" already exist
+2020-07-18 21:24:01,495 - INFO - Goin' Fast @ http://0.0.0.0:8000
+2020-07-18 21:24:01,496 - INFO - Starting worker [12538]
+2020-07-18 23:34:31,483 - INFO - Stopping worker [12538]
+2020-07-18 23:34:31,498 - INFO - Server Stopped
+2020-07-18 23:34:31,500 - INFO - ########## Football Management Tool Server Finished ##########
+2020-07-18 23:35:59,375 - INFO - MongoDbService/create_collection - the collection "leagues" already exist
+2020-07-18 23:35:59,377 - INFO - MongoDbService/create_collection - the collection "teams" already exist
+2020-07-18 23:35:59,378 - INFO - MongoDbService/create_collection - the collection "matches" already exist
+2020-07-18 23:35:59,378 - INFO - ########## Football Management Tool Server Started ##########
+2020-07-18 23:35:59,381 - INFO - MongoDbService/create_collection - the collection "leagues" already exist
+2020-07-18 23:35:59,382 - INFO - MongoDbService/create_collection - the collection "teams" already exist
+2020-07-18 23:35:59,382 - INFO - MongoDbService/create_collection - the collection "matches" already exist
+2020-07-18 23:35:59,382 - INFO - Goin' Fast @ http://0.0.0.0:8000
+2020-07-18 23:35:59,384 - INFO - Starting worker [13911]
+2020-07-18 23:36:20,743 - INFO - Stopping worker [13911]
+2020-07-18 23:36:20,755 - INFO - Server Stopped
+2020-07-18 23:36:20,756 - INFO - ########## Football Management Tool Server Finished ##########
+2020-07-18 23:36:21,856 - INFO - MongoDbService/create_collection - the collection "leagues" already exist
+2020-07-18 23:36:21,859 - INFO - MongoDbService/create_collection - the collection "teams" already exist
+2020-07-18 23:36:21,861 - INFO - MongoDbService/create_collection - the collection "matches" already exist
+2020-07-18 23:36:21,861 - INFO - ########## Football Management Tool Server Started ##########
+2020-07-18 23:36:21,895 - INFO - MongoDbService/create_collection - the collection "leagues" already exist
+2020-07-18 23:36:21,908 - INFO - MongoDbService/create_collection - the collection "teams" already exist
+2020-07-18 23:36:21,909 - INFO - MongoDbService/create_collection - the collection "matches" already exist
+2020-07-18 23:36:21,909 - INFO - Goin' Fast @ http://0.0.0.0:8000
+2020-07-18 23:36:21,913 - INFO - Starting worker [13929]
+2020-07-18 23:59:50,888 - INFO - Stopping worker [13929]
+2020-07-18 23:59:50,904 - INFO - Server Stopped
+2020-07-18 23:59:50,905 - INFO - ########## Football Management Tool Server Finished ##########
