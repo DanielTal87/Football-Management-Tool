@@ -80,7 +80,7 @@ class MongoDbService:
         logger.info(f'MongoDbService/get_team - start | data: {data}')
         try:
             logger.debug(f'MongoDbService/get_team - calling teamProvider/get_team')
-            _team = get_league(self, data)
+            _team = get_team(self, data)
             logger.debug(f'MongoDbService/get_team - teamProvider/get_team succeeded | team: {_team}')
 
             if _team is None:
