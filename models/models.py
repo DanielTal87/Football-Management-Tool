@@ -31,11 +31,11 @@ MatchSchema = {
     "properties": {
         "home_team": {"type": "string"},
         "away_team": {"type": "string"},
+        "date": {"type": "string"},
         "score": {"type": "string"},
         "is_draw": {"type": "boolean"},
         "team_won": {"type": "string"},
-        "team_lost": {"type": "string"},
-        "date": {"type": "string"}
+        "team_lost": {"type": "string"}
     },
-    "required": ["home_team", "away_team"]
+    "required": ["home_team", "away_team", "date"]
 }

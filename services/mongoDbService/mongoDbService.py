@@ -8,6 +8,7 @@ from services.loggerServices.loggerService import LoggerService
 from services.mongoDbService.collectionProvider import create_collections
 from services.mongoDbService.leagueProvider import (create_league, get_league)
 from services.mongoDbService.teamProvider import (create_team, get_team)
+from services.mongoDbService.matchProvider import (create_match, get_match)
 
 config = ConfigService().config
 logger = LoggerService().logger
@@ -31,7 +32,7 @@ class MongoDbService:
         # League already exists
         except DuplicateKeyError as error:
             logger.error(f'MongoDbService/create_league failed - duplicate key error | error: {error}')
-            raise Exception('League is already exists - name and season must be unique')
+            raise Exception('League is already exists - name and season combination must be unique')
 
         except Exception as error:
             logger.error(f'MongoDbService/create_league failed | error: {error}')
@@ -67,7 +68,7 @@ class MongoDbService:
         # Team already exists
         except DuplicateKeyError as error:
             logger.error(f'MongoDbService/create_team failed - duplicate key error | error: {error}')
-            raise Exception('Team is already exists - name and season must be unique')
+            raise Exception('Team is already exists - name and season combination must be unique')
 
         except Exception as error:
             logger.error(f'MongoDbService/create_team failed | error: {error}')
@@ -92,3 +93,39 @@ class MongoDbService:
 
         else:
             return _team
+
+    def create_match(self, data):
+        logger.info(f'MongoDbService/create_match - start | data: {data}')
+        try:
+            logger.debug(f'MongoDbService/create_match - calling matchProvider/create_match')
+            _id = create_match(self, data)
+            logger.debug(f'MongoDbService/create_match - matchProvider/create_match succeeded | id: {_id}')
+
+        # Match already exists
+        except DuplicateKeyError as error:
+            logger.error(f'MongoDbService/create_match failed - duplicate key error | error: {error}')
+            raise Exception('Match is already exists - home team, away team and date combination must be unique')
+
+        except Exception as error:
+            logger.error(f'MongoDbService/create_match failed | error: {error}')
+            raise
+
+        else:
+            return _id
+
+    def get_match(self, data):
+        logger.info(f'MongoDbService/get_match - start | data: {data}')
+        try:
+            logger.debug(f'MongoDbService/get_match - calling matchProvider/get_match')
+            _match = get_match(self, data)
+            logger.debug(f'MongoDbService/get_match - matchProvider/get_match succeeded | _match: {_match}')
+
+            if _match is None:
+                raise Exception('The match is not exists')
+
+        except Exception as error:
+            logger.error(f'MongoDbService/get_match failed | error: {error}')
+            raise
+
+        else:
+            return _match

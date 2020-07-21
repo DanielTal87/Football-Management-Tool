@@ -25,7 +25,7 @@ def create_collection(self, collection):
         logger.info(f'MongoDbService/create_collection - collection "{collection}" created successfully')
     except Exception as error:
         # collection already exists
-        if "already exists" in error._message:
+        if "already exists" in str(error.message):
             logger.info(f'MongoDbService/create_collection - the collection "{collection}" already exist')
             pass
 
@@ -34,7 +34,7 @@ def index_collections(self, collection):
     switcher = {
         'leagues': create_index_leagues(self),
         'teams': create_index_teams(self),
-        # 'matches': self.create_index_matches()
+        'matches': self.create_index_matches()
     }
     return switcher.get(collection, "Invalid Collection")
 
@@ -53,5 +53,5 @@ def create_index_teams(self):
 
 def create_index_matches(self):
     self.client.FMT.matches.create_index(
-        [("name", pymongo.ASCENDING), ("season", pymongo.ASCENDING)],
+        [("home_team", pymongo.ASCENDING), ("away_team", pymongo.ASCENDING), ("date", pymongo.ASCENDING)],
         unique=True)
