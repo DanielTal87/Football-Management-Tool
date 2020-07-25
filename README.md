@@ -10,8 +10,9 @@ The football association required you to build a software solution for managing 
 ## How to run
 1. In the project directory, run: `pip3 install -r requirement.txt`
 2. Connect MongoDB at url: `localhost`, port `27017`
-2. Add Data To The DB `python3 add_data_to_db.py`
-2. Classification Engine Command `python3 runner.py`
+3. Add Data To The DB `python3 add_data_to_db.py`
+4. Classification Engine Command `python3 runner.py`
+5. Check today's logs at: `/logs`
 
 ## Routes
 #### Leagues
