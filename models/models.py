@@ -3,8 +3,7 @@ LeagueSchema = {
     "properties": {
         "name": {"type": "string"},
         "season": {"type": "number"},
-        "teams": {"type": "array"},
-        "matches": {"type": "array"}
+        "teams": {"type": "array"}
     },
     "required": ["name", "season"]
 }

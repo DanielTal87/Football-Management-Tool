@@ -30,28 +30,33 @@ def create_collection(self, collection):
             pass
 
 
-def index_collections(self, collection):
-    switcher = {
-        'leagues': create_index_leagues(self),
-        'teams': create_index_teams(self),
-        'matches': self.create_index_matches()
-    }
-    return switcher.get(collection, "Invalid Collection")
-
-
 def create_index_leagues(self):
     self.client.FMT.leagues.create_index(
         [("name", pymongo.ASCENDING), ("season", pymongo.ASCENDING)],
         unique=True)
+    return True
 
 
 def create_index_teams(self):
     self.client.FMT.teams.create_index(
         [("name", pymongo.ASCENDING), ("season", pymongo.ASCENDING)],
         unique=True)
+    return True
 
 
 def create_index_matches(self):
     self.client.FMT.matches.create_index(
         [("home_team", pymongo.ASCENDING), ("away_team", pymongo.ASCENDING), ("date", pymongo.ASCENDING)],
         unique=True)
+    return True
+
+
+def index_collections(self, collection):
+    if collection == 'leagues':
+        create_index_leagues(self)
+    elif collection == 'teams':
+        create_index_teams(self)
+    elif collection == 'matches':
+        create_index_matches(self)
+    else:
+        raise Exception("Invalid Collection")

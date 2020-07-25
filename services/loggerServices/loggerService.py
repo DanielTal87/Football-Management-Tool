@@ -3,8 +3,10 @@
 import logging
 import datetime
 
+from services.singletonService.singletonServiceMetaClass import SingletonMetaClass
 
-class LoggerService:
+
+class LoggerService(metaclass=SingletonMetaClass):
     def __init__(self):
         self.logger = logging.getLogger("FMT")
         logging.basicConfig(filename=f'logs/FMT-{datetime.date.today()}.log',
